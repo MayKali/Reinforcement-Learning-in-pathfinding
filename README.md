@@ -24,7 +24,7 @@ The Q-Learning algorithm runs in a loop, continuously updating the Q-table and n
 
 To run the game, simply execute the `Simulation.py` script. This will start the game interface and the Q-Learning algorithm.
 
-Please note that this is a simple implementation of Q-Learning and is intended for educational purposes. It may not be optimized for performance or scalability.
+Please note that this is a simple implementation of Q-Learning and was created as a fun little project after my 1st year of undergrad. 
 
 ## Dependencies
 
