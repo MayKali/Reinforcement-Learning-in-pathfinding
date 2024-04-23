@@ -1,4 +1,4 @@
-#learner.py 
+# Simulation.py 
 #Absorbing Goal - Q-learning 
 import Network
 import threading
@@ -9,7 +9,7 @@ import random
 
 epsilon = 0.2  #epsilon-greedy policy  - exploration parameter
 gamma = 0.3 #Parameter that determines how much each future reward is taken into consideration
-            # If gamme is close to 0, we only care about immediate rewards  
+            # If gamma is close to 0, we only care about immediate rewards  
 alpha = 1.0 #Learning Rate
 actions = Network.actions
 states = []
