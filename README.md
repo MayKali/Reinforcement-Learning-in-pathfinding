@@ -46,4 +46,4 @@ This project is licensed under the MIT License. See the LICENSE file for details
 Reinforcement Learning: An Introduction by Richard S. Sutton and Andrew G. Barto
 The Q-Learning algorithm
 
-!https://github.com/MayKali/Reinforcement-Learning-in-pathfinding/blob/master/images/Test.mov
+![https://github.com/MayKali/Reinforcement-Learning-in-pathfinding/blob/master/images/Test.gif)](https://github.com/MayKali/Reinforcement-Learning-in-pathfinding/blob/master/images/Test.gif)
