@@ -6,19 +6,33 @@ root = Tk()
 #Understood
 
 pixel = 50
+
+GRID = 7
 (x, y) = (7, 7) #Number of blocks
+player_location = (0, GRID-1) #Start location of the player 
 actions = ["up", "down", "left", "right"]
 
+# Generate all possible positions in a 7x7 grid
+all_positions = [(i, j) for i in range(7) for j in range(7)]
 
+# Remove the starting position from the list of all positions
+all_positions.remove(player_location)
+
+# Randomly select 5 unique positions for obstacles
+obstacles = random.sample(all_positions, 5)
+
+remainder = [pos for pos in all_positions if pos not in obstacles]
+
+goal_position = random.choice(remainder)
 
 gameDisplay = Canvas(root, width=x*pixel, height=y*pixel) #GameDisplay
-player_location = (0, y-1) #Start location of the player 
 score = 1
 restart = False #While loop 
 step_penalty = -0.05 #Reward for taking one step 
 
-obstacles = [(1,0),(1,1),(0,0),(2,5),(2,6)] #FIGURE A WAY TO RANDOMIZE THESE OBSTACLES 
-goal = [(4, 0, "green", 1)] #Goal and Trap
+# Goal and Trap 
+
+goal = [(goal_position[0], goal_position[1], "green", 1)]
 
 
 '''(4, 1, "red", -1)'''
